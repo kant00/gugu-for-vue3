@@ -2,14 +2,14 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./index.css";
 import { createWebHashHistory, createRouter } from "vue-router";
-import liu from "./components/liu.vue";
-import liu2 from "./components/liu2.vue";
+import Home from "./views/Home.vue";
+import Doc from "./views/Doc.vue";
 const history = createWebHashHistory();
 const router = createRouter({
   history: history,
   routes: [
-    { path: "/", component: liu },
-    { path: "/xxx", component: liu2 },
+    { path: "/", component: Home },
+    { path: "/Doc", component: Doc },
   ],
 });
 createApp(App).use(router).mount("#app");
