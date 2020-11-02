@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js add vue-router @4.0.0-beta.3
+  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js install
 
 PATH: 
   D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Software\nodejs;D:\Software\yarn\bin;C:\Users\Administrator\Desktop;D:\Software\hugo;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\vscode\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.npm.taobao.org/@4.0.0-beta.3: Request "https://registry.npm.taobao.org/@4.0.0-beta.3" returned a 405
-      at Request.params.callback [as _callback] (D:\Software\yarn\lib\cli.js:66105:18)
-      at Request.self.callback (D:\Software\yarn\lib\cli.js:140748:22)
-      at Request.emit (events.js:310:20)
-      at Request.<anonymous> (D:\Software\yarn\lib\cli.js:141720:10)
-      at Request.emit (events.js:310:20)
-      at IncomingMessage.<anonymous> (D:\Software\yarn\lib\cli.js:141642:12)
-      at Object.onceWrapper (events.js:416:28)
-      at IncomingMessage.emit (events.js:322:22)
-      at endReadableNT (_stream_readable.js:1187:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: EPERM: operation not permitted, unlink 'D:\qdxxtest\lunzi-ui-1\node_modules\vite\node_modules\esbuild\esbuild.exe'
 
 npm manifest: 
   {
@@ -35,11 +25,14 @@ npm manifest:
       "build": "vite build"
     },
     "dependencies": {
-      "vue": "^3.0.0-rc.1"
+      "github-markdown-css": "^4.0.0",
+      "vue": "^3.0.0-rc.1",
+      "vue-router": "4.0.0-beta.3"
     },
     "devDependencies": {
-      "vite": "^1.0.0-rc.1",
-      "@vue/compiler-sfc": "^3.0.0-rc.1"
+      "@vue/compiler-sfc": "^3.0.0-rc.1",
+      "sass": "^1.27.0",
+      "vite": "^1.0.0-rc.1"
     }
   }
 
@@ -535,7 +528,7 @@ Lockfile:
       ansi-styles "^4.1.0"
       supports-color "^7.1.0"
   
-  chokidar@^3.3.1:
+  "chokidar@>=2.0.0 <4.0.0", chokidar@^3.3.1:
     version "3.4.3"
     resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.3.tgz?cache=0&sync_timestamp=1602585473259&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.4.3.tgz#c1df38231448e45ca4ac588e6c79573ba6a57d5b"
     integrity sha1-wd84IxRI5FykrFiObHlXO6alfVs=
@@ -1838,6 +1831,13 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.2.1.tgz?cache=0&sync_timestamp=1589129010497&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsafe-buffer%2Fdownload%2Fsafe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
     integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
   
+  sass@^1.27.0:
+    version "1.27.0"
+    resolved "https://registry.npm.taobao.org/sass/download/sass-1.27.0.tgz#0657ff674206b95ec20dc638a93e179c78f6ada2"
+    integrity sha1-Blf/Z0IGuV7CDcY4qT4XnHj2raI=
+    dependencies:
+      chokidar ">=2.0.0 <4.0.0"
+  
   selfsigned@^1.10.7:
     version "1.10.8"
     resolved "https://registry.npm.taobao.org/selfsigned/download/selfsigned-1.10.8.tgz?cache=0&sync_timestamp=1600188854033&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fselfsigned%2Fdownload%2Fselfsigned-1.10.8.tgz#0d17208b7d12c33f8eac85c41835f27fc3d81a30"
@@ -2083,6 +2083,11 @@ Lockfile:
       slash "^3.0.0"
       vue "^3.0.0-rc.5"
       ws "^7.2.3"
+  
+  vue-router@4.0.0-beta.3:
+    version "4.0.0-beta.3"
+    resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.0-beta.3.tgz?cache=0&sync_timestamp=1602838745905&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.0-beta.3.tgz#e46f45807023a4b8ce73a143a216b4c9ea3eb243"
+    integrity sha1-5G9FgHAjpLjOc6FDoha0yeo+skM=
   
   vue@^3.0.0-rc.1, vue@^3.0.0-rc.5:
     version "3.0.2"
