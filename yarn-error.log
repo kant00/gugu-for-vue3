@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js install
+  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js add prismjs
 
 PATH: 
   D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Software\nodejs;D:\Software\yarn\bin;C:\Users\Administrator\Desktop;D:\Software\hugo;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;E:\vscode\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'D:\qdxxtest\lunzi-ui-1\node_modules\vite\node_modules\esbuild\esbuild.exe'
+  Error: EPERM: operation not permitted, unlink 'D:\qdxxtest\lunzi-ui-1\node_modules\esbuild\esbuild.exe'
 
 npm manifest: 
   {
@@ -31,6 +31,7 @@ npm manifest:
     },
     "devDependencies": {
       "@vue/compiler-sfc": "^3.0.0-rc.1",
+      "marked": "^1.2.2",
       "sass": "^1.27.0",
       "vite": "^1.0.0-rc.1"
     }
