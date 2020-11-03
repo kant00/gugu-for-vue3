@@ -4,8 +4,8 @@ cd dist &&
 git init &&
 git add . &&
 git commit -m "update" &&
-git branch -M master &&
+git branch -M main &&
 git remote add origin git@github.com:kant00/gugu-ui-website.git &&
-git push -f -u origin master &&
+git push -f -u origin main &&
 cd -
 echo http://lyh.monster/gugu-ui-website/#/
