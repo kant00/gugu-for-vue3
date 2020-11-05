@@ -5,5 +5,6 @@ import App from "./App.vue";
 import { router } from "./router";
 import "github-markdown-css";
 import Markdown from "./components/Markdown.vue";
-createApp(App).use(router).mount("#app");
-App.component("Markdown", Markdown);
+const app = createApp(App);
+app.use(router).mount("#app");
+app.component("Markdown", Markdown);
