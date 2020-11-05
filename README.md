@@ -1,6 +1,6 @@
 # gugu-for-vue3
 
-# [点击查看官网]（https://lyh.monster/gugu-ui-website/#/）
+[点击查看官网]（https://lyh.monster/gugu-ui-website/#/）
 
 ## 运行步骤
 
